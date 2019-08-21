@@ -15,6 +15,7 @@
 		9D581E3B230D7B0600A9553D /* PaginationServiceiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D581E33230D7B0600A9553D /* PaginationServiceiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D581E3F230D7B1C00A9553D /* PaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E2A230D7A7000A9553D /* PaginationService.swift */; };
 		9D581E40230D7B1C00A9553D /* PaginationServiceKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E2C230D7ABC00A9553D /* PaginationServiceKind.swift */; };
+		9D581E42230D82C400A9553D /* CustomPaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E41230D82C400A9553D /* CustomPaginationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		9D581E33230D7B0600A9553D /* PaginationServiceiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaginationServiceiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D581E35230D7B0600A9553D /* PaginationServiceiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaginationServiceiOS.h; sourceTree = "<group>"; };
 		9D581E36230D7B0600A9553D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D581E41230D82C400A9553D /* CustomPaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaginationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		9D581E04230D79C400A9553D /* PaginationServiceExample */ = {
 			isa = PBXGroup;
 			children = (
+				9D581E41230D82C400A9553D /* CustomPaginationService.swift */,
 				9D581E05230D79C400A9553D /* AppDelegate.swift */,
 				9D581E0C230D79C500A9553D /* Assets.xcassets */,
 				9D581E0E230D79C500A9553D /* LaunchScreen.storyboard */,
@@ -233,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D581E42230D82C400A9553D /* CustomPaginationService.swift in Sources */,
 				9D581E06230D79C400A9553D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

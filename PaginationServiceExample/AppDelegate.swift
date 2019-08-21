@@ -1,4 +1,6 @@
 import UIKit
+import PaginationServiceiOS
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
    lazy var window: UIWindow? = {
@@ -18,6 +20,8 @@ class MainVC: UIViewController {
       super.viewDidLoad()
       view = MainView()
       view.backgroundColor = .orange
+      let items = CustomPaginationService.items
+      items.forEach { Swift.print("$0:  \($0)") }
    }
    override var prefersStatusBarHidden: Bool { return false }
 }

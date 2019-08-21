@@ -1,5 +1,13 @@
 import Foundation
 
-public class PaginationService {
-   
+open class PaginationService<T> {
+   /**
+    * Returns items
+    */
+   open class var items: [T]  {
+      return []
+   }
 }
+
+// 🏀 
+// add json, file deps
