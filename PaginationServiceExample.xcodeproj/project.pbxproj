@@ -16,6 +16,7 @@
 		9D581E3F230D7B1C00A9553D /* PaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E2A230D7A7000A9553D /* PaginationService.swift */; };
 		9D581E40230D7B1C00A9553D /* PaginationServiceKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E2C230D7ABC00A9553D /* PaginationServiceKind.swift */; };
 		9D581E42230D82C400A9553D /* CustomPaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E41230D82C400A9553D /* CustomPaginationService.swift */; };
+		9D581E44230D8B3500A9553D /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D581E43230D8B3500A9553D /* assets.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		9D581E35230D7B0600A9553D /* PaginationServiceiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaginationServiceiOS.h; sourceTree = "<group>"; };
 		9D581E36230D7B0600A9553D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D581E41230D82C400A9553D /* CustomPaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaginationService.swift; sourceTree = "<group>"; };
+		9D581E43230D8B3500A9553D /* assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = assets.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		9D581E34230D7B0600A9553D /* PaginationServiceiOS */ = {
 			isa = PBXGroup;
 			children = (
+				9D581E43230D8B3500A9553D /* assets.bundle */,
 				9D581E35230D7B0600A9553D /* PaginationServiceiOS.h */,
 				9D581E36230D7B0600A9553D /* Info.plist */,
 			);
@@ -226,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D581E44230D8B3500A9553D /* assets.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
