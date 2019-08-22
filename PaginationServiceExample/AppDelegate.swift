@@ -20,32 +20,23 @@ class MainVC: UIViewController {
       super.viewDidLoad()
       view = MainView()
       view.backgroundColor = .orange
-      
-//      let a = A<Int>()
-//      let a = A<Int>.test()
-//      Swift.print("a:  \(a)")
-//      a.data = 2//2
-      
-//
       _ = {
-         let items: [Track] = TrackPaginationService.items
-         Swift.print("items.count:  \(items.count)")
-         items.forEach { Swift.print("\($0.artistName)") }
-      }
+         TrackPaginationService.getItems(index: 0, length: 50) { success, tracks in Swift.print("success: \(success) artistName: \(tracks.first?.artistName) count: \(tracks.count)") }
+         TrackPaginationService.getItems(index: 120, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } // 30
+         TrackPaginationService.getItems(index: 160, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } //false, 0
+      }()
       
       _ = {
-         let b = CustomPaginationService2.items
+         let b = CustomPaginationService.items
          b.forEach { Swift.print("\($0)") }
          Swift.print("b:  \(b.count)")
       }
       
-//      CustomPaginationService2.getItems(index: 0, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") }
-      CustomPaginationService2.getItems(index: 120, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } // 30
-//      _ = {
-//         let items: [String] = PaginationService.items
-//         Swift.print("items.count:  \(items.count)")
-//         items.forEach { Swift.print("$0:  \($0)") }
-//      }
+      _ = {
+         CustomPaginationService.getItems(index: 0, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") }
+         CustomPaginationService.getItems(index: 120, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } // 30
+         CustomPaginationService.getItems(index: 160, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } //false, 0
+      }
    }
    override var prefersStatusBarHidden: Bool { return false }
 }

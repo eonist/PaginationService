@@ -13,9 +13,6 @@
 		9D581E37230D7B0600A9553D /* PaginationServiceiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D581E35230D7B0600A9553D /* PaginationServiceiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D581E3A230D7B0600A9553D /* PaginationServiceiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D581E33230D7B0600A9553D /* PaginationServiceiOS.framework */; };
 		9D581E3B230D7B0600A9553D /* PaginationServiceiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D581E33230D7B0600A9553D /* PaginationServiceiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9D581E3F230D7B1C00A9553D /* PaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E2A230D7A7000A9553D /* PaginationService.swift */; };
-		9D581E40230D7B1C00A9553D /* PaginationServiceKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E2C230D7ABC00A9553D /* PaginationServiceKind.swift */; };
-		9D581E42230D82C400A9553D /* CustomPaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E41230D82C400A9553D /* CustomPaginationService.swift */; };
 		9D581E44230D8B3500A9553D /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D581E43230D8B3500A9553D /* assets.bundle */; };
 		9D581E49230D93F100A9553D /* JSONSugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D581E46230D93F100A9553D /* JSONSugar.framework */; };
 		9D581E4A230D93F100A9553D /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D581E47230D93F100A9553D /* With.framework */; };
@@ -27,9 +24,10 @@
 		9D581E53230E7DDB00A9553D /* JSONSugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D581E4E230E7DDB00A9553D /* JSONSugar.framework */; };
 		9D581E54230E7DDB00A9553D /* JSONSugar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D581E4E230E7DDB00A9553D /* JSONSugar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D581E55230E7F2400A9553D /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D581E43230D8B3500A9553D /* assets.bundle */; };
-		9D581E5F230EA90800A9553D /* TrackPaginationService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E5E230EA90800A9553D /* TrackPaginationService2.swift */; };
-		9D581E62230EA97800A9553D /* CustomPaginationService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E5A230EA8E400A9553D /* CustomPaginationService2.swift */; };
-		9D581E63230EA97800A9553D /* PaginationService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E5C230EA8F300A9553D /* PaginationService2.swift */; };
+		9D581E5F230EA90800A9553D /* TrackPaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E5E230EA90800A9553D /* TrackPaginationService.swift */; };
+		9D581E63230EA97800A9553D /* PaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E5C230EA8F300A9553D /* PaginationService.swift */; };
+		9D581E65230EAEE000A9553D /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E64230EAEE000A9553D /* Track.swift */; };
+		9D581E67230EB03F00A9553D /* CustomPaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E5A230EA8E400A9553D /* CustomPaginationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +63,9 @@
 		9D581E0C230D79C500A9553D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D581E0F230D79C500A9553D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D581E11230D79C500A9553D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D581E2A230D7A7000A9553D /* PaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationService.swift; sourceTree = "<group>"; };
-		9D581E2C230D7ABC00A9553D /* PaginationServiceKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationServiceKind.swift; sourceTree = "<group>"; };
 		9D581E33230D7B0600A9553D /* PaginationServiceiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaginationServiceiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D581E35230D7B0600A9553D /* PaginationServiceiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaginationServiceiOS.h; sourceTree = "<group>"; };
 		9D581E36230D7B0600A9553D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D581E41230D82C400A9553D /* CustomPaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaginationService.swift; sourceTree = "<group>"; };
 		9D581E43230D8B3500A9553D /* assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = assets.bundle; sourceTree = "<group>"; };
 		9D581E46230D93F100A9553D /* JSONSugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSONSugar.framework; path = Carthage/Build/iOS/JSONSugar.framework; sourceTree = "<group>"; };
 		9D581E47230D93F100A9553D /* With.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = With.framework; path = Carthage/Build/iOS/With.framework; sourceTree = "<group>"; };
@@ -78,9 +73,10 @@
 		9D581E4C230E7DDB00A9553D /* FileSugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FileSugar.framework; path = Carthage/Build/iOS/FileSugar.framework; sourceTree = "<group>"; };
 		9D581E4D230E7DDB00A9553D /* With.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = With.framework; path = Carthage/Build/iOS/With.framework; sourceTree = "<group>"; };
 		9D581E4E230E7DDB00A9553D /* JSONSugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSONSugar.framework; path = Carthage/Build/iOS/JSONSugar.framework; sourceTree = "<group>"; };
-		9D581E5A230EA8E400A9553D /* CustomPaginationService2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaginationService2.swift; sourceTree = "<group>"; };
-		9D581E5C230EA8F300A9553D /* PaginationService2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationService2.swift; sourceTree = "<group>"; };
-		9D581E5E230EA90800A9553D /* TrackPaginationService2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPaginationService2.swift; sourceTree = "<group>"; };
+		9D581E5A230EA8E400A9553D /* CustomPaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaginationService.swift; sourceTree = "<group>"; };
+		9D581E5C230EA8F300A9553D /* PaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationService.swift; sourceTree = "<group>"; };
+		9D581E5E230EA90800A9553D /* TrackPaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPaginationService.swift; sourceTree = "<group>"; };
+		9D581E64230EAEE000A9553D /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +130,8 @@
 		9D581E04230D79C400A9553D /* PaginationServiceExample */ = {
 			isa = PBXGroup;
 			children = (
-				9D581E61230EA96200A9553D /* 2 */,
-				9D581E60230EA95700A9553D /* 1 */,
+				9D581E5E230EA90800A9553D /* TrackPaginationService.swift */,
+				9D581E64230EAEE000A9553D /* Track.swift */,
 				9D581E05230D79C400A9553D /* AppDelegate.swift */,
 				9D581E0C230D79C500A9553D /* Assets.xcassets */,
 				9D581E0E230D79C500A9553D /* LaunchScreen.storyboard */,
@@ -147,8 +143,8 @@
 		9D581E29230D7A5B00A9553D /* src */ = {
 			isa = PBXGroup;
 			children = (
-				9D581E59230EA8D400A9553D /* 2 */,
-				9D581E58230EA8CA00A9553D /* 1 */,
+				9D581E5A230EA8E400A9553D /* CustomPaginationService.swift */,
+				9D581E5C230EA8F300A9553D /* PaginationService.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -171,40 +167,6 @@
 				9D581E47230D93F100A9553D /* With.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9D581E58230EA8CA00A9553D /* 1 */ = {
-			isa = PBXGroup;
-			children = (
-				9D581E2A230D7A7000A9553D /* PaginationService.swift */,
-				9D581E2C230D7ABC00A9553D /* PaginationServiceKind.swift */,
-			);
-			path = 1;
-			sourceTree = "<group>";
-		};
-		9D581E59230EA8D400A9553D /* 2 */ = {
-			isa = PBXGroup;
-			children = (
-				9D581E5A230EA8E400A9553D /* CustomPaginationService2.swift */,
-				9D581E5C230EA8F300A9553D /* PaginationService2.swift */,
-			);
-			path = 2;
-			sourceTree = "<group>";
-		};
-		9D581E60230EA95700A9553D /* 1 */ = {
-			isa = PBXGroup;
-			children = (
-				9D581E41230D82C400A9553D /* CustomPaginationService.swift */,
-			);
-			path = 1;
-			sourceTree = "<group>";
-		};
-		9D581E61230EA96200A9553D /* 2 */ = {
-			isa = PBXGroup;
-			children = (
-				9D581E5E230EA90800A9553D /* TrackPaginationService2.swift */,
-			);
-			path = 2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,9 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D581E5F230EA90800A9553D /* TrackPaginationService2.swift in Sources */,
-				9D581E42230D82C400A9553D /* CustomPaginationService.swift in Sources */,
+				9D581E5F230EA90800A9553D /* TrackPaginationService.swift in Sources */,
 				9D581E06230D79C400A9553D /* AppDelegate.swift in Sources */,
+				9D581E65230EAEE000A9553D /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,10 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D581E63230EA97800A9553D /* PaginationService2.swift in Sources */,
-				9D581E62230EA97800A9553D /* CustomPaginationService2.swift in Sources */,
-				9D581E3F230D7B1C00A9553D /* PaginationService.swift in Sources */,
-				9D581E40230D7B1C00A9553D /* PaginationServiceKind.swift in Sources */,
+				9D581E67230EB03F00A9553D /* CustomPaginationService.swift in Sources */,
+				9D581E63230EA97800A9553D /* PaginationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,7 +3,12 @@
 <img width="240" alt="img" src="pagination.gif?raw=true">
 
 ### What is it
-A framework for mocking pagination calls.
+- A framework for mocking paginated calls.
+
+### requirements:
+- Decodable struct 
+- .json file
+- A subclass with Type and path to json file
 
 ### How do I get it
 - Carthage `github "eonist/PaginationService"`
