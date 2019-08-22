@@ -6,6 +6,7 @@ import JSONSugar
  * - Parameter networkLatency: general network response time
  * - Parameter filePath: the resources to load from
  * - Parameter items: loads from file if items is not stored in cache yet
+ * - Fixme: ⚠️️ rename items to getItems() and _items to items, and __items to _items ?
  */
 open class PaginationService<T: Decodable> {
    open class var _items: [T]? { get { fatalError("must be overriden in subclass") } set { fatalError("must be overriden in subclass")/*_ = newValue*/ } }
