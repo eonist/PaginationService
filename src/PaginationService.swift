@@ -24,13 +24,15 @@ open class PaginationService<T: Decodable> {
    /**
     * Simulate a pagination call for a specified range of data (get file content)
     */
-   public class func getItems(index: Int, length: Int, complete: GetItemsComplete) {  // we might have to use a method to be able to use T
-      sleep(UInt32(networkLatency.randomElement()!)) // sleep between 1 and 4 secs to simulate network call
-      guard index < items.count else { complete(false, []); return } // index out of bound, return false
-      let min = Swift.min(index + length, items.count)
-      let range = (index..<min)
-      let retVal = Array(items[range])
-      complete(true, retVal)
+   public class func getItems(index: Int, length: Int, complete: @escaping GetItemsComplete) {  // we might have to use a method to be able to use T
+      DispatchQueue.global(qos: .background).async {
+         sleep(UInt32(networkLatency.randomElement()!)) // sleep between 1 and 4 secs to simulate network call
+         guard index < items.count else { complete(false, []); return } // index out of bound, return false
+         let min = Swift.min(index + length, items.count)
+         let range = (index..<min)
+         let retVal = Array(items[range])
+         complete(true, retVal)
+      }
    }
 }
 /**
