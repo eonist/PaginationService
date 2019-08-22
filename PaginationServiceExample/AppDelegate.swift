@@ -21,7 +21,7 @@ class MainVC: UIViewController {
       view = MainView()
       view.backgroundColor = .orange
       _ = {
-         TrackPaginationService.getItems(index: 0, length: 50) { success, tracks in Swift.print("success: \(success) artistName: \(tracks.first?.artistName) count: \(tracks.count)") }
+         TrackPaginationService.getItems(index: 0, length: 50) { success, tracks in Swift.print("success: \(success) artistName: \(String(describing: tracks.first?.artistName)) count: \(tracks.count)") }
          TrackPaginationService.getItems(index: 120, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } // 30
          TrackPaginationService.getItems(index: 160, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } //false, 0
       }()
