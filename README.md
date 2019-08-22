@@ -6,7 +6,7 @@
 - A framework for mocking paginated calls.
 
 ### requirements:
-- Decodable struct 
+- Decodable struct
 - .json file
 - A subclass with Type and path to json file
 
@@ -15,6 +15,19 @@
 - Manual Open `.xcodeproj`
 
 ### Example:
+**JSON**
+```json
+["Sublime", "Dave Matthews", "Tom Petty"]
+```
+**Swift**
 ```swift
-PaginationService.getItems(index: 20, length: 50) { success, items in Swift.print("success: \(success) \(items.count)") } // 30
+public class CustomPaginationService: PaginationService<String> {
+   override open class var filePath: String { return Bundle.main.resourcePath! + "/assets.bundle/items.json" }
+   private static var __items: [String]?
+   override public class var _items: [String]? {
+      get { return __items }
+      set { __items = newValue }
+   }
+}
+CustomPaginationService.getItems(index: 20, length: 50) { success, items in Swift.print("success: \(success) \(items.count)") } // 30
 ```
