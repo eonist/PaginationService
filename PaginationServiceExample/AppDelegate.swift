@@ -25,13 +25,11 @@ class MainVC: UIViewController {
          TrackPaginationService.getItems(index: 120, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } // 30
          TrackPaginationService.getItems(index: 160, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } //false, 0
       }()
-      
       _ = {
          let b = CustomPaginationService.items
          b.forEach { Swift.print("\($0)") }
          Swift.print("b:  \(b.count)")
       }
-      
       _ = {
          CustomPaginationService.getItems(index: 0, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") }
          CustomPaginationService.getItems(index: 120, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } // 30

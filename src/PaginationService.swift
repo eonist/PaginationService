@@ -9,7 +9,7 @@ import JSONSugar
  * - Fixme: ⚠️️ rename items to getItems() and _items to items, and __items to _items ?
  */
 open class PaginationService<T: Decodable> {
-   open class var _items: [T]? { get { fatalError("must be overriden in subclass") } set { fatalError("must be overriden in subclass")/*_ = newValue*/ } }
+   open class var _items: [T]? { get { fatalError("must be overriden in subclass") } set { _ = newValue; fatalError("must be overriden in subclass") } }
    open class var networkLatency: Range<Int> { return (1..<4) }
    open class var filePath: String { fatalError("must be overriden in subclass") }
    open class var items: [T] {

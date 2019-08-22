@@ -12,9 +12,9 @@ import JSONSugar
  * CustomPaginationService.getItems(index: 160, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } //false, 0
  */
 public class CustomPaginationService: PaginationService<String> {
-   override open class var filePath: String { return Bundle.main.resourcePath! + "/assets.bundle/items.json" }
+   override public class var filePath: String { return Bundle.main.resourcePath! + "/assets.bundle/items.json" }
    private static var __items: [String]?
-   override public class var _items: [String]? { 
+   override public class var _items: [String]? {
       get { return __items }
       set { __items = newValue }
    }

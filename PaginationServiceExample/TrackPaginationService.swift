@@ -10,7 +10,7 @@ import PaginationServiceiOS
  * TrackPaginationService.getItems(index: 160, length: 50) { success, tracks in Swift.print("success: \(success) \(tracks.count)") } //false, 0
  */
 class TrackPaginationService: PaginationService<Track> {
-   override open class var filePath: String { return Bundle.main.resourcePath! + "/assets.bundle/tracks.json" } // the resources to load from
+   override class var filePath: String { return Bundle.main.resourcePath! + "/assets.bundle/tracks.json" } // the resources to load from
    static var __items: [Track]?
    override class var _items: [Track]? {
       get { return __items }
