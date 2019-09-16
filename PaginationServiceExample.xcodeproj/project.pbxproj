@@ -28,6 +28,8 @@
 		9D581E63230EA97800A9553D /* PaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E5C230EA8F300A9553D /* PaginationService.swift */; };
 		9D581E65230EAEE000A9553D /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E64230EAEE000A9553D /* Track.swift */; };
 		9D581E67230EB03F00A9553D /* CustomPaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D581E5A230EA8E400A9553D /* CustomPaginationService.swift */; };
+		9DECC402230FD0EB0073F3FB /* PaginationService+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECC3FE230FD08B0073F3FB /* PaginationService+Data.swift */; };
+		9DECC403230FD0EB0073F3FB /* PaginationService+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECC400230FD09F0073F3FB /* PaginationService+Type.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		9D581E5C230EA8F300A9553D /* PaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationService.swift; sourceTree = "<group>"; };
 		9D581E5E230EA90800A9553D /* TrackPaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPaginationService.swift; sourceTree = "<group>"; };
 		9D581E64230EAEE000A9553D /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		9DECC3FE230FD08B0073F3FB /* PaginationService+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaginationService+Data.swift"; sourceTree = "<group>"; };
+		9DECC400230FD09F0073F3FB /* PaginationService+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaginationService+Type.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 			children = (
 				9D581E5A230EA8E400A9553D /* CustomPaginationService.swift */,
 				9D581E5C230EA8F300A9553D /* PaginationService.swift */,
+				9DECC3FE230FD08B0073F3FB /* PaginationService+Data.swift */,
+				9DECC400230FD09F0073F3FB /* PaginationService+Type.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -334,6 +340,8 @@
 			files = (
 				9D581E67230EB03F00A9553D /* CustomPaginationService.swift in Sources */,
 				9D581E63230EA97800A9553D /* PaginationService.swift in Sources */,
+				9DECC402230FD0EB0073F3FB /* PaginationService+Data.swift in Sources */,
+				9DECC403230FD0EB0073F3FB /* PaginationService+Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
