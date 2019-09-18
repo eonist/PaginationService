@@ -7,13 +7,12 @@
 [![codebeat badge](https://codebeat.co/badges/deb313b8-68c2-4e79-8bed-dfcdfb79416f)](https://codebeat.co/projects/github-com-eonist-paginationservice-master)
 
 # PaginationService
-
 <img width="240" alt="img" src="pagination.gif?raw=true">
 
 ### What is it
 - A framework for mocking paginated calls.
 
-### requirements:
+### Requirements:
 - Decodable struct
 - .json file
 - A subclass with Type and path to json file
