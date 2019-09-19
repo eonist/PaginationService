@@ -22,6 +22,12 @@ extension PaginationService {
          complete(.success(retVal))
       }
    }
+   /**
+    * Returns the total amount of items excisting
+    */
+   public class func getTotalItemsCount() -> Int {
+      return items.count
+   }
 }
 /**
  * Internal helper method

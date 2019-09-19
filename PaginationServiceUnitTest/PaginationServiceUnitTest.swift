@@ -12,6 +12,7 @@ class PaginationServiceUnitTest: XCTestCase {
       test1()
       test2()
       test3()
+      test4()
     }
 }
 extension PaginationServiceUnitTest {
@@ -66,5 +67,11 @@ extension PaginationServiceUnitTest {
          Swift.print("3. count: \(String(describing: tracks?.count))")
          XCTAssertEqual("Hello, World!", "Hello, World!")
       }
+   }
+   /**
+    * Tests totalItemCount api call
+    */
+   func test4() {
+      XCTAssertEqual( CustomPaginationService.getTotalItemsCount(), 134)
    }
 }

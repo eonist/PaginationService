@@ -7,6 +7,7 @@ import JSONSugar
  * - Parameter filePath: the resources to load from
  * - Parameter items: loads from file if items is not stored in cache yet
  * - Fixme: ⚠️️ rename items to getItems() and _items to items, and __items to _items ?
+ * - Note: Generic type T is Decodable in the sense that json contains an array of items that can be decode to the generic type specified in the subclass using PaginationService
  */
 open class PaginationService<T: Decodable> {
    /**
