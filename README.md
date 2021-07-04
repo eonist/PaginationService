@@ -4,8 +4,6 @@
 ![Lang](https://img.shields.io/badge/Language-Swift%205.1-orange.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
-[![codebeat badge](https://codebeat.co/badges/deb313b8-68c2-4e79-8bed-dfcdfb79416f)](https://codebeat.co/projects/github-com-eonist-paginationservice-master)
-[![Build Status](https://travis-ci.com/eonist/PaginationService.svg?branch=master)](https://travis-ci.com/eonist/PaginationService)
 
 # PaginationService
 <img width="240" alt="img" src="pagination.gif?raw=true">
@@ -39,3 +37,7 @@ public class CustomPaginationService: PaginationService<String> {
 }
 CustomPaginationService.getItems(index: 20, length: 50) { success, items in Swift.print("success: \(success) \(items.count)") } // 30
 ```
+
+### Todo:
+- Add github actions
+- Add spm
